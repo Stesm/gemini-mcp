@@ -1,0 +1,21 @@
+{
+  "name": "mcp-gemini",
+  "version": "1.0.0",
+  "description": "MCP server for Gemini AI integration",
+  "main": "./dist/index.js",
+  "bin": {
+    "gemini-mcp": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node .",
+    "dev": "tsc && node ./dist/index.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.13.2"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "@types/node": "^20.0.0"
+  }
+}
