@@ -81,8 +81,8 @@ async function executeGeminiCommand(prompt: string, autoConfirm: boolean = false
 
     const timeout = setTimeout(() => {
       child.kill();
-      reject(new Error('Gemini command timed out after 30 seconds'));
-    }, 30000);
+      reject(new Error('Gemini command timed out after 5 minutes'));
+    }, 5 * 60 * 1000);
 
     let stdout = '';
     let stderr = '';
